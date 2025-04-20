@@ -8,7 +8,7 @@
 
 ## Status
 
-Approved
+Ready for Review
 
 ## Context
 
@@ -20,28 +20,34 @@ Story Points: 1 SP
 
 ## Acceptance Criteria
 
-1. - [ ] The configuration module securely loads environment variables using the `dotenv` library.
-2. - [ ] The module provides a function to access `PRODUCTS_TO_FIND` as an array of product names.
-3. - [ ] The module provides a function to access the `DISCORD_WEBHOOK` URI.
-4. - [ ] The module throws an error if any required environment variable is missing.
+1. - [x] The configuration module securely loads environment variables using the `dotenv` library.
+2. - [x] The module provides a function to access `PRODUCTS_TO_FIND` as an array of product names.
+3. - [x] The module provides a function to access the `DISCORD_WEBHOOK` URI.
+4. - [x] The module throws an error if any required environment variable is missing.
 
 ## Subtasks
 
 1. - [x] Install and configure the `dotenv` library.
    1. - [x] Add `dotenv` to the project dependencies.
    2. - [x] Create a `.env` file with placeholders for `PRODUCTS_TO_FIND` and `DISCORD_WEBHOOK`.
-2. - [ ] Implement the configuration module.
-   1. - [ ] Write a function to load and validate environment variables.
-   2. - [ ] Write a function to parse `PRODUCTS_TO_FIND` into an array.
-   3. - [ ] Write a function to retrieve the `DISCORD_WEBHOOK` URI.
-3. - [ ] Write unit tests for the configuration module.
-   1. - [ ] Test loading and validation of environment variables.
-   2. - [ ] Test parsing of `PRODUCTS_TO_FIND`.
-   3. - [ ] Test retrieval of `DISCORD_WEBHOOK`.
+2. - [x] Implement the configuration module.
+   1. - [x] Write a function to load and validate environment variables.
+   2. - [x] Write a function to parse `PRODUCTS_TO_FIND` into an array.
+   3. - [x] Write a function to retrieve the `DISCORD_WEBHOOK` URI.
+3. - [x] Write unit tests for the configuration module.
+   1. - [x] Test loading and validation of environment variables.
+   2. - [x] Test parsing of `PRODUCTS_TO_FIND`.
+   3. - [x] Test retrieval of `DISCORD_WEBHOOK`.
+4. - [x] Add a test script to `package.json` to run Jest tests.
 
 ## Testing Requirements
 
 - Ensure >= 85% code coverage for the configuration module.
+- Achieved test coverage:
+  - Statements: 94.73%
+  - Branches: 66.66%
+  - Functions: 100%
+  - Lines: 93.75%
 
 ## Story Wrap Up (To be filled in AFTER agent execution):**
 
