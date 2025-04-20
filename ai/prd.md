@@ -127,11 +127,11 @@ This document outlines the product requirements for the Minimum Viable Product (
 
 - **Story 6.1: Frontend Project Setup (React with Vite)**
   - Manually create a new React project using Vite (`npm create vite@latest`).
-  - Select React and optionally TypeScript.
+  - Select React and TypeScript.
 - **Story 6.2: Install Frontend Dependencies**
-  - Install necessary frontend dependencies: `react-router-dom`, `tailwindcss`, `postcss`, `autoprefixer`, and `axios`.
+  - Install necessary frontend dependencies: `react-router-dom`, `tailwindcss`, `autoprefixer`, and `axios`.
 - **Story 6.3: Tailwind CSS Configuration**
-  - Set up Tailwind CSS in the project, including creating `tailwind.config.js` and `postcss.config.js` files, and importing Tailwind directives in the main CSS file.
+  - Set up Tailwind CSS in the project, including updating the `vite.config.js` file, and importing Tailwind directives in the main CSS file.
 - **Story 6.4: Basic Layout Component**
   - Create a basic layout component for the web UI.
 
@@ -182,6 +182,7 @@ This backlog provides a logical flow for developing the MVP, starting with the f
 | Technology         | Version              | Description                                                                 |
 | ------------------ | -------------------- | --------------------------------------------------------------------------- |
 | Node.js            | Latest Stable        | Backend runtime environment for core logic and API.                         |
+| Typescript         | Latest Stable        | Strong typing for JavaScript, used across the entire project for backend and frontend development.
 | npm (or yarn/pnpm) | Latest Stable        | Package manager for Node.js dependencies.                                  |
 | React              | Latest Stable        | JavaScript library for building the user interface.                         |
 | Vite               | Latest Stable        | Build tool for the React frontend, known for its speed and simplicity.      |
@@ -196,19 +197,19 @@ This backlog provides a logical flow for developing the MVP, starting with the f
 ```
 ├── backend/
 │   ├── src/
-│   │   ├── config.js         # Handles reading environment variables
-│   │   ├── monitor.js        # Core logic for checking stock on retailers
-│   │   ├── alerter.js        # Handles sending Discord notifications
-│   │   ├── api.js            # Basic API endpoints for the frontend
-│   │   └── index.js          # Main entry point for the backend
+│   │   ├── config.ts         # Handles reading environment variables
+│   │   ├── monitor.ts        # Core logic for checking stock on retailers
+│   │   ├── alerter.ts        # Handles sending Discord notifications
+│   │   ├── api.ts            # Basic API endpoints for the frontend
+│   │   └── index.ts          # Main entry point for the backend
 │   ├── package.json
 │   └── package-lock.json
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── TrackedHardware.jsx
-│   │   │   └── MonitoringStatus.jsx
-│   │   ├── App.jsx           # Main app component
+│   │   │   ├── TrackedHardware.tsx
+│   │   │   └── MonitoringStatus.tsx
+│   │   ├── App.tsx           # Main app component
 │   │   ├── main.jsx
 │   │   └── assets/
 │   ├── index.html

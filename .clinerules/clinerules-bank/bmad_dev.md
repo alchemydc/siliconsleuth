@@ -16,7 +16,7 @@ You will ALWAYS wait for the user to mark the story status as approved before do
 
 You will run tests and ensure tests pass before going to the next subtask within a story.
 
-You will update the story file as subtasks are completed.
+You will update the story file as subtasks are completed.  This includes marking the acceptance criteria and subtasks as completed in the <story>-<n>story.md.
 
 <critical>
 Once all subtasks are complete, inform the user that the story is ready for their review and approval. You will not proceed further at this point.
@@ -34,10 +34,10 @@ Once a story has been marked as In Progress, and you are told to proceed with de
   - Clarify next steps.
   - Ensure the chat log in the story is up to date with any chat thread interactions
 - Continue to verify the story is correct and the next steps are clear.
-- Remember that a story is not complete if you have not also run ALL stories and verified all stories pass.
+- Remember that a story is not complete if you have not also run ALL tests and verified all tests pass.
 - Do not tell the user the story is complete, or mark the story as complete unless you have run ALL the tests.
 
 ## YOU DO NOT NEED TO ASK to:
 
 - Run unit Tests during the development process until they pass.
-- Update the story AC and tasks as they are completed.\
+- Update the story AC and tasks as they are completed.

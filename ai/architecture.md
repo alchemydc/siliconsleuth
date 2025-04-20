@@ -12,7 +12,8 @@ This document outlines the architecture for the Minimum Viable Product (MVP) of 
 
 | Technology     | Version          | Description                                                                                                 |
 | -------------- | ---------------- | ----------------------------------------------------------------------------------------------------------- |
-| Node.js        | v20.x            | Backend runtime environment for core logic, API, and monitoring services.                                  |
+| Node.js        | v22.x            | Backend runtime environment for core logic, API, and monitoring services.                                  |
+| TypeScript     | Latest Stable    | Strong typing for JavaScript, used across the entire project for backend and frontend development.          |
 | npm            | Latest Stable    | Package manager for Node.js dependencies.                                                                  |
 | React          | v18.2.0          | JavaScript library for building the user interface.                                                         |
 | Vite           | Latest Stable    | Build tool for the React frontend, known for its speed and simplicity.                                      |
@@ -38,3 +39,33 @@ graph TD
     Backend -- "In Stock" Alert --> Discord[Discord Channel via Webhook];
     Backend -- Tracked Products & Status --> Frontend[Basic Web UI];
     User -- Views Status --> Frontend;
+```
+
+## Project Structure
+
+```
+├── backend/
+│   ├── src/
+│   │   ├── config.ts         # Handles reading environment variables
+│   │   ├── monitor.ts        # Core logic for checking stock on retailers
+│   │   ├── alerter.ts        # Handles sending Discord notifications
+│   │   ├── api.ts            # Basic API endpoints for the frontend
+│   │   └── index.ts          # Main entry point for the backend
+│   ├── package.json
+│   └── package-lock.json
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── TrackedHardware.tsx
+│   │   │   └── MonitoringStatus.tsx
+│   │   ├── App.tsx           # Main app component
+│   │   ├── main.tsx
+│   │   └── assets/
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.ts
+│   └── tailwind.config.ts
+├── .env                      # Environment variables (should not be committed)
+├── .gitignore
+└── README.md
