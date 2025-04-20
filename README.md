@@ -8,7 +8,7 @@ Monitor and track hardware availability with real-time Discord alerts
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Tests](https://github.com/alchemydc/silicon_sleuth/actions/workflows/run-tests.yml/badge.svg?branch=main&style=for-the-badge)](https://github.com/alchemydc/silicon_sleuth/actions/workflows/run-tests.yml)
+[![Tests](https://github.com/alchemydc/siliconsleuth/actions/workflows/run-tests.yml/badge.svg?branch=main&style=for-the-badge)](https://github.com/alchemydc/siliconsleuth/actions/workflows/run-tests.yml)
 
 </div>
 
