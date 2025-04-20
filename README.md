@@ -8,7 +8,7 @@ Monitor and track hardware availability with real-time Discord alerts
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Tests](https://img.shields.io/badge/Tests-Passing-success?style=for-the-badge&logo=jest)](https://jestjs.io/)
+[![Tests](https://github.com/alchemydc/silicon_sleuth/actions/workflows/run-tests.yml/badge.svg?branch=main&style=for-the-badge)](https://github.com/alchemydc/silicon_sleuth/actions/workflows/run-tests.yml)
 
 </div>
 
@@ -34,23 +34,16 @@ Monitor and track hardware availability with real-time Discord alerts
    ```
 
 3. **Configure environment variables:**
-   Create a `.env` file in the root directory with:
+   Create a `.env` file in the root directory with for example:
    ```env
-   PRODUCTS_TO_FIND=nvidia rtx 5070ti,nvidia rtx 5080
-   DISCORD_WEBHOOK=your-discord-webhook-url
+   PRODUCTS_TO_FIND="nvidia rtx 5070ti,nvidia rtx 5080"
+   DISCORD_WEBHOOK="your-discord-webhook-url"
    ```
 
 4. **Verify setup:**
    ```bash
    npm test
    ```
-
-## 🔧 Environment Variables
-
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `PRODUCTS_TO_FIND` | Comma-separated list of products to track | `nvidia rtx 5070ti,nvidia rtx 5080` |
-| `DISCORD_WEBHOOK` | Discord webhook URL for alerts | `https://discord.com/api/webhooks/...` |
 
 ## 📝 License
 

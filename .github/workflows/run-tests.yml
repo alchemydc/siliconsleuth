@@ -13,6 +13,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      PRODUCTS_TO_FIND: "nvidia rtx 5070ti,nvidia rtx 5080"
+      DISCORD_WEBHOOK: "placeholder_webhook"
 
     steps:
       - name: Checkout code
