@@ -1,13 +1,62 @@
-# Project Template
-Scaffold for vibe-coding projects with [Cline](https://cline.bot/)
+<div align="center">
 
-After cloning, `mv cline_template $NEW_PROJECT_NAME` && `rm -rfv .git` to create a new name and delete the git history for the project.
+# 🕵️ SiliconSleuth
 
-Then, edit [docs/memory-bank/projectbrief.md](docs/memory-bank/projectbrief.md) to taste and run `initialize memory bank` from Cline cli within vscode.
+Monitor and track hardware availability with real-time Discord alerts
 
-## Environment Variables
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Tests](https://img.shields.io/badge/Tests-Passing-success?style=for-the-badge&logo=jest)](https://jestjs.io/)
 
-The project requires the following environment variables to be set in a `.env` file:
+</div>
 
-- `PRODUCTS_TO_FIND`: A comma-separated list of hardware products to track (e.g., `nvidia rtx 5070ti,nvidia rtx 5080`).
-- `DISCORD_WEBHOOK`: The Discord webhook URI for sending stock alerts.
+## ✨ Features
+
+- 🔍 Monitor stock availability for hardware products from multiple retailers
+- 🚨 Real-time Discord alerts with product details
+- 💰 Instant price and availability updates
+- 🔗 Direct purchase links included in alerts
+- ⚙️ Simple configuration using environment variables
+
+## 🚀 Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd silicon_sleuth
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure environment variables:**
+   Create a `.env` file in the root directory with:
+   ```env
+   PRODUCTS_TO_FIND=nvidia rtx 5070ti,nvidia rtx 5080
+   DISCORD_WEBHOOK=your-discord-webhook-url
+   ```
+
+4. **Verify setup:**
+   ```bash
+   npm test
+   ```
+
+## 🔧 Environment Variables
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `PRODUCTS_TO_FIND` | Comma-separated list of products to track | `nvidia rtx 5070ti,nvidia rtx 5080` |
+| `DISCORD_WEBHOOK` | Discord webhook URL for alerts | `https://discord.com/api/webhooks/...` |
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+<div align="center">
+Made with ❤️ by the SiliconSleuth team
+</div>

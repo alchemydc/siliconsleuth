@@ -69,7 +69,9 @@ This document outlines the product requirements for the Minimum Viable Product (
   - Install the `dotenv` dependency to load environment variables.
 - **Story 1.2: Configuration Module Implementation**
   - Create a configuration module to securely read and provide access to the `PRODUCTS_TO_FIND` and `DISCORD_WEBHOOK` environment variables.
-- **Story 1.3: Core HTTP Request Module**
+- **Story 1.3: Configure unit tests to run in Github Actions**
+  - Configure a github action to run `npm test` on every push to dev or main
+- **Story 1.4: Core HTTP Request Module**
   - Install the `axios` dependency.
   - Create a core module responsible for making HTTP GET requests to retailer websites or APIs.
 
